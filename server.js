@@ -80,8 +80,6 @@ app.get("/addTask", (req, res) => {
 
 connection.connect((err) => {
     if (err) {
-        console.log("Error trying to fetch")
-
         console.error("Error trying to connect database", err)
         return;
     }
