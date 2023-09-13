@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
     user: "root",
     password: "password",
     database: "main_data"
-});
+})
 
 function getData(query, callback) {
     connection.query(query, (err, results) => {
